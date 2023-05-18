@@ -1,0 +1,169 @@
+{
+
+    "artistes": [
+
+        {
+
+            "idArtiste": 1,
+
+            "name": "DJ SNAKE",
+
+            "album": [
+
+                {
+
+                    "idAlbum": 1,
+
+                    "nom": "Carte Blanche",
+
+                    "songs": [
+
+                        {
+
+                            "idMusique": 1,
+
+                            "title": "Magenta Riddim",
+
+                            "length": "3:14"
+
+                        },
+
+                        {
+
+                            "idMusique": 2,
+
+                            "title": "When The Lights Goes Down",
+
+                            "length": "3:51"
+
+                        },
+
+                        {
+
+                            "idMusique": 3,
+
+                            "title": "No Option",
+
+                            "length": "3:05"
+
+                        }
+
+                    ]
+
+                }
+
+            ]
+
+        },
+
+        {
+
+            "idArtiste": 2,
+
+            "name": "LA FOUINE",
+
+            "album": [
+
+                {
+
+                    "idAlbum": 2,
+
+                    "nom": "Drole de parcours",
+
+                    "songs": [
+
+                        {
+
+                            "idMusique": 4,
+
+                            "title": "J'espere",
+
+                            "length": "6:45"
+
+                        },
+
+                        {
+
+                            "idMusique": 5,
+
+                            "title": "On verra",
+
+                            "length": "4:00"
+
+                        },
+
+                        {
+
+                            "idMusique": 6,
+
+                            "title": "J'avais pas les mots",
+
+                            "length": "3:35"
+
+                        }
+
+                    ]
+
+                }
+
+            ]
+
+        },
+
+        {
+
+            "idArtiste": 3,
+
+            "name": "DMX",
+
+            "album": [
+
+                {
+
+                    "idAlbum": 3,
+
+                    "nom": "The Great Depression",
+
+                    "songs": [
+
+                        {
+
+                            "idMusique": 7,
+
+                            "title": "I Miss You",
+
+                            "length": "4:10"
+
+                        },
+
+                        {
+
+                            "idMusique": 8,
+
+                            "title": "We Right Here",
+
+                            "length": "3:51"
+
+                        },
+
+                        {
+
+                            "idMusique": 9,
+
+                            "title": "A Minute For Your Son",
+
+                            "length": "3:05"
+
+                        }
+
+                    ]
+
+                }
+
+            ]
+
+        }
+
+    ]
+
+}
