@@ -41,18 +41,21 @@
                         album.songs.forEach(song => {
                             var row = document.createElement('tr');
 
-			                var coverCell = document.createElement('td'); //
+			                var coverCell = document.createElement('img'); //
                             var artistCell = document.createElement('td');
                             var albumCell = document.createElement('td');
                             var titleCell = document.createElement('td');
                             var lengthCell = document.createElement('td');
-
+                            // var imageAlbum = document.createElement("img"); //
+                            
 			                coverCell.textContent = album.cover; //
                             artistCell.textContent = artist.name;
                             albumCell.textContent = album.nom;
                             titleCell.textContent = song.title;
                             lengthCell.textContent = song.length;
 
+                        
+                            // row.appendChild(imageAlbum); //
 			                row.appendChild(coverCell); //
                             row.appendChild(artistCell);
                             row.appendChild(albumCell);
