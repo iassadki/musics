@@ -18,7 +18,8 @@
     <table id="data-table">
         <thead>
             <tr>
-		        <th>Cover</th>
+		        <!-- <th>Cover</th> -->
+                <img id="image-album" src="" alt="Image">
                 <th>Artiste</th>
                 <th>Album</th>
                 <th>Titre</th>
@@ -41,7 +42,12 @@
                         album.songs.forEach(song => {
                             var row = document.createElement('tr');
 
-			                var coverCell = document.createElement('img'); //
+                            var imageUrl = data.cover;
+                            var imageAlbum = document.getElementById('image-album');
+                            imageElement.src = imageUrl;
+
+
+			                // var coverCell = document.createElement('img'); //
                             var artistCell = document.createElement('td');
                             var albumCell = document.createElement('td');
                             var titleCell = document.createElement('td');
