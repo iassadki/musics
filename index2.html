@@ -19,7 +19,7 @@
         <thead>
             <tr>
 		        <!-- <th>Cover</th> -->
-                <th><img id="image-album" src="" alt="Image"></th>
+                <th>Cover</th>
                 <th>Artiste</th>
                 <th>Album</th>
                 <th>Titre</th>
@@ -50,15 +50,17 @@
                             
 			                // var coverCell = document.createElement('img'); //
                             var coverCell = document.getElementById('image-album');
+                            coverCell.src = album.cover;
+                            row.appendChild(coverCell);
+                            var artistCell = document.createElement('td');
                             var artistCell = document.createElement('td');
                             var albumCell = document.createElement('td');
                             var titleCell = document.createElement('td');
                             var lengthCell = document.createElement('td');
-                            // var imageAlbum = document.createElement("img"); //
-
+                            // var imageAlbum = document.createElement("img"); //                            
                             // coverCell.src = imageUrl;
+                            // row.appendChild(coverCell);
                             
-                            coverCell.src = album.cover;
                             // Afficher l'image en mettant à jour les attributs width et height de l'élément img
                             coverCell.width = imageWidth;
                             coverCell.height = imageHeight;
@@ -66,7 +68,6 @@
                             albumCell.textContent = album.nom;
                             titleCell.textContent = song.title;
                             lengthCell.textContent = song.length;
-
                         
                             // row.appendChild(imageAlbum); //
 			                row.appendChild(coverCell); //
