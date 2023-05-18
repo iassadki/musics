@@ -43,7 +43,10 @@
                             var row = document.createElement('tr');
 
                             // var imageUrl = data.cover;
-                            
+
+                            // Définir la largeur et la hauteur souhaitées de l'image
+                            var imageWidth = 30;
+                            var imageHeight = 30;
                             
 			                // var coverCell = document.createElement('img'); //
                             var coverCell = document.getElementById('image-album');
@@ -56,7 +59,9 @@
                             // coverCell.src = imageUrl;
                             
                             coverCell.src = album.cover;
-			                // coverCell.textContent = album.cover; //
+                            // Afficher l'image en mettant à jour les attributs width et height de l'élément img
+                            coverCell.width = imageWidth;
+                            coverCell.height = imageHeight;
                             artistCell.textContent = artist.name;
                             albumCell.textContent = album.nom;
                             titleCell.textContent = song.title;
