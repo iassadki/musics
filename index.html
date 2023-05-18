@@ -1,1 +1,106 @@
-Hello World
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Artistes et albums</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <table id="data-table">
+        <thead>
+            <tr>
+                <th>Artiste</th>
+                <th>Album</th>
+                <th>Titre</th>
+                <th>Duree</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script>
+        // // Récupérer les données depuis une URL
+        // fetch('https://ilias-assadki.go.yn.fr/musics/musics.json')
+        //     .then(response => response.json())
+        //     .then(data => {
+        //         // Parcourir les données et les afficher dans le tableau HTML
+        //         var tableBody = document.querySelector('#data-table tbody');
+        //         data.artistes.forEach(artist => {
+        //             artist.album.forEach(album => {
+        //                 album.songs.forEach(song => {
+        //                     var row = document.createElement('tr');
+        //                     var artistCell = document.createElement('td');
+        //                     var albumCell = document.createElement('td');
+        //                     var titleCell = document.createElement('td');
+        //                     var lengthCell = document.createElement('td');
+        //                     artistCell.textContent = artist.name;
+        //                     albumCell.textContent = album.nom;
+        //                     titleCell.textContent = song.title;
+        //                     lengthCell.textContent = song.length;
+        //                     row.appendChild(artistCell);
+        //                     row.appendChild(albumCell);
+        //                     row.appendChild(titleCell);
+        //                     row.appendChild(lengthCell);
+        //                     tableBody.appendChild(row);
+        //                 });
+        //             });
+        //         });
+        //     })
+        //     .catch(error => console.log(error));
+
+        
+    </script>
+</body>
+
+</html>
+ -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Utilisateurs GitHub</title>
+</head>
+
+<body>
+    <ul id="users-list"></ul>
+
+    <script>
+        // Récupérer les données depuis une URL
+        fetch('https://api.github.com/users')
+            .then(response => response.json())
+            .then(data => {
+                // Parcourir les données et les afficher dans la liste HTML
+                var usersList = document.querySelector('#users-list');
+                data.forEach(user => {
+                    var listItem = document.createElement('li');
+                    listItem.innerHTML = `
+                        <a href="${user.html_url}" target="_blank">
+                            <img src="${user.avatar_url}" alt="Avatar" width="50" height="50">
+                            ${user.login}
+                        </a>
+                    `;
+                    usersList.appendChild(listItem);
+                });
+            })
+            .catch(error => console.log(error));
+    </script>
+</body>
+
+</html>
+
+
