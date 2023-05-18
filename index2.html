@@ -42,19 +42,21 @@
                         album.songs.forEach(song => {
                             var row = document.createElement('tr');
 
-                            var imageUrl = data.cover;
-                            var imageAlbum = document.getElementById('image-album');
-                            imageElement.src = imageUrl;
-
-
+                            // var imageUrl = data.cover;
+                            
+                            
 			                // var coverCell = document.createElement('img'); //
+                            var coverCell = document.getElementById('image-album');
                             var artistCell = document.createElement('td');
                             var albumCell = document.createElement('td');
                             var titleCell = document.createElement('td');
                             var lengthCell = document.createElement('td');
                             // var imageAlbum = document.createElement("img"); //
+
+                            // coverCell.src = imageUrl;
                             
-			                coverCell.textContent = album.cover; //
+                            coverCell.src = album.cover;
+			                // coverCell.textContent = album.cover; //
                             artistCell.textContent = artist.name;
                             albumCell.textContent = album.nom;
                             titleCell.textContent = song.title;
