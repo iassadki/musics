@@ -206,7 +206,7 @@
                                     "name": "Werenoi",
                                     "album": [
                                         {
-                                            "idAlbum": 4,
+                                            "idAlbum": 5,
                                             "nom": "Carre",
                                             "cover": "https://iassadki.github.io/musics/images/WERENOI.png",
                                             "songs": [
@@ -231,17 +231,17 @@
                                 },
 
                                                 {
-                                                    "idArtiste": 4,
+                                                    "idArtiste": 5,
                                                     "name": "HAMZA",
                                                     "album": [
                                                         {
-                                                            "idAlbum": 4,
+                                                            "idAlbum": 5,
                                                             "nom": "Sincerement",
                                                             "cover": "https://iassadki.github.io/musics/images/HAMZA.png",
                                                             "songs": [
                                                                 {
                                                                     "idMusique": 16,
-                                                                    "title": "Au bout de la nuit",
+                                                                    "title": "Au Bout De La Nuit",
                                                                     "length": "3:15"
                                                                 },
                                                                 {
