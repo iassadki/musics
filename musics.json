@@ -168,7 +168,98 @@
 
             ]
 
-        }
+        },
+
+                {
+                    "idArtiste": 4,
+
+                    "name": "SCREW",
+
+                    "album": [
+                        {
+                            "idAlbum": 4,
+                            "nom": "SZR 2001",
+                            "cover": "https://iassadki.github.io/musics/images/SCREW.png",
+                            "songs": [
+                                {
+                                    "idMusique": 10,
+                                    "title": "22",
+                                    "length": "3:15"
+                                },
+                                {
+                                    "idMusique": 11,
+                                    "title": "Donzoo",
+                                    "length": "3:51"
+                                },
+                                {
+                                    "idMusique": 12,
+                                    "title": "Trilogie",
+                                    "length": "3:05"
+                                }
+                            ]
+                        }
+                    ]
+                },
+
+                                {
+                                    "idArtiste": 5,
+                                    "name": "Werenoi",
+                                    "album": [
+                                        {
+                                            "idAlbum": 4,
+                                            "nom": "Carre",
+                                            "cover": "https://iassadki.github.io/musics/images/WERENOI.png",
+                                            "songs": [
+                                                {
+                                                    "idMusique": 13,
+                                                    "title": "Salaire",
+                                                    "length": "3:10"
+                                                },
+                                                {
+                                                    "idMusique": 14,
+                                                    "title": "Vroum Vroum",
+                                                    "length": "3:51"
+                                                },
+                                                {
+                                                    "idMusique": 15,
+                                                    "title": "Escorte",
+                                                    "length": "3:05"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+
+                                                {
+                                                    "idArtiste": 4,
+                                                    "name": "HAMZA",
+                                                    "album": [
+                                                        {
+                                                            "idAlbum": 4,
+                                                            "nom": "Sincerement",
+                                                            "cover": "https://iassadki.github.io/musics/images/HAMZA.png",
+                                                            "songs": [
+                                                                {
+                                                                    "idMusique": 16,
+                                                                    "title": "Au bout de la nuit",
+                                                                    "length": "3:15"
+                                                                },
+                                                                {
+                                                                    "idMusique": 17,
+                                                                    "title": "Codeine 19",
+                                                                    "length": "3:51"
+                                                                },
+                                                                {
+                                                                    "idMusique": 18,
+                                                                    "title": "YSL",
+                                                                    "length": "3:05"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+
+        
 
     ]
 
