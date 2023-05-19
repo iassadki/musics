@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Artistes et albums</title>
     <style>
@@ -7,18 +8,21 @@
             border-collapse: collapse;
             width: 100%;
         }
-        th, td {
+
+        th,
+        td {
             text-align: left;
             padding: 8px;
             border-bottom: 1px solid #ddd;
         }
     </style>
 </head>
+
 <body>
+
     <table id="data-table">
         <thead>
             <tr>
-		        <!-- <th>Cover</th> -->
                 <th>Cover</th>
                 <th>Artiste</th>
                 <th>Album</th>
@@ -32,7 +36,7 @@
 
     <script>
         // Récupérer les données depuis une URL
-        fetch('https://iassadki.github.io/musics/musics.json') 
+        fetch('https://iassadki.github.io/musics/musics.json')
             .then(response => response.json())
             .then(data => {
                 // Parcourir les données et les afficher dans le tableau HTML
@@ -42,35 +46,25 @@
                         album.songs.forEach(song => {
                             var row = document.createElement('tr');
 
-                            // var imageUrl = data.cover;
-
-                            // Définir la largeur et la hauteur souhaitées de l'image
-                            var imageWidth = 30;
-                            var imageHeight = 30;
-                            
-			                // var coverCell = document.createElement('img'); //
-                            var coverCell = document.getElementById('image-album');
-                            coverCell.src = album.cover;
-                            row.appendChild(coverCell);
-                            var artistCell = document.createElement('td');
+                            var coverCell = document.createElement('td');
                             var artistCell = document.createElement('td');
                             var albumCell = document.createElement('td');
                             var titleCell = document.createElement('td');
                             var lengthCell = document.createElement('td');
-                            // var imageAlbum = document.createElement("img"); //                            
-                            // coverCell.src = imageUrl;
-                            // row.appendChild(coverCell);
-                            
-                            // Afficher l'image en mettant à jour les attributs width et height de l'élément img
-                            coverCell.width = imageWidth;
-                            coverCell.height = imageHeight;
+
+                            var coverImg = document.createElement('img');
+                            coverImg.src = album.cover;
+                            coverImg.alt = album.nom;
+                            coverImg.style.width = '100px'; // Ajuster la taille de l'image selon vos préférences
+
                             artistCell.textContent = artist.name;
                             albumCell.textContent = album.nom;
                             titleCell.textContent = song.title;
                             lengthCell.textContent = song.length;
-                        
-                            // row.appendChild(imageAlbum); //
-			                // row.appendChild(coverCell); //
+
+                            coverCell.appendChild(coverImg);
+
+                            row.appendChild(coverCell);
                             row.appendChild(artistCell);
                             row.appendChild(albumCell);
                             row.appendChild(titleCell);
@@ -83,4 +77,5 @@
             .catch(error => console.log(error));
     </script>
 </body>
+
 </html>
