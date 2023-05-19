@@ -1,74 +1,73 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Artistes et albums</title>
     <style>
-        table {
-            border-collapse: collapse;
-            width: 100%;
+        .music-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
         }
-        th, td {
-            text-align: left;
-            padding: 8px;
-            border-bottom: 1px solid #ddd;
+
+        .music-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
         }
-        .album-cover {
+
+        .music-image {
             width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 5px;
         }
     </style>
 </head>
+
 <body>
-    
-    <table id="data-table">
-        <thead>
-            <tr>
-                <th>Cover</th>
-                <th>Artiste</th>
-                <th>Album</th>
-                <th>Titre</th>
-                <th>Durée</th>
-            </tr>
-        </thead>
-        <tbody>
-        </tbody>
-    </table>
+
+    <div class="music-grid" id="music-grid"></div>
 
     <script>
         // Récupérer les données depuis une URL
-        fetch('https://iassadki.github.io/musics/musics.json') 
+        fetch('https://iassadki.github.io/musics/musics.json')
             .then(response => response.json())
             .then(data => {
-                // Parcourir les données et les afficher dans le tableau HTML
-                var tableBody = document.querySelector('#data-table tbody');
+                // Récupérer l'élément parent de la grille
+                const musicGrid = document.querySelector('#music-grid');
+
+                // Parcourir les données et les afficher dans la grille HTML
                 data.artistes.forEach(artist => {
                     artist.album.forEach(album => {
                         album.songs.forEach(song => {
-                            var row = document.createElement('tr');
+                            const musicCard = document.createElement('div');
+                            musicCard.classList.add('music-card');
 
-                            var coverCell = document.createElement('td');
-                            var artistCell = document.createElement('td');
-                            var albumCell = document.createElement('td');
-                            var titleCell = document.createElement('td');
-                            var lengthCell = document.createElement('td');
+                            const musicImage = document.createElement('img');
+                            musicImage.src = album.cover;
+                            musicImage.alt = album.nom;
+                            musicImage.classList.add('music-image');
+                            musicCard.appendChild(musicImage);
 
-                            var coverImg = document.createElement('img');
-                            coverImg.src = album.cover;
-                            coverImg.alt = album.nom;
-                            coverImg.classList.add('album-cover');
+                            const artistName = document.createElement('p');
+                            artistName.textContent = artist.name;
+                            musicCard.appendChild(artistName);
 
-                            artistCell.textContent = artist.name;
-                            albumCell.textContent = album.nom;
-                            titleCell.textContent = song.title;
-                            lengthCell.textContent = song.length;
-                        
-                            coverCell.appendChild(coverImg);
+                            const albumName = document.createElement('p');
+                            albumName.textContent = album.nom;
+                            musicCard.appendChild(albumName);
 
-                            row.appendChild(coverCell);
-                            row.appendChild(artistCell);
-                            row.appendChild(albumCell);
-                            row.appendChild(titleCell);
-                            row.appendChild(lengthCell);
-                            tableBody.appendChild(row);
+                            const songTitle = document.createElement('p');
+                            songTitle.textContent = song.title;
+                            musicCard.appendChild(songTitle);
+
+                            const songLength = document.createElement('p');
+                            songLength.textContent = song.length;
+                            musicCard.appendChild(songLength);
+
+                            musicGrid.appendChild(musicCard);
                         });
                     });
                 });
@@ -76,4 +75,5 @@
             .catch(error => console.log(error));
     </script>
 </body>
+
 </html>
