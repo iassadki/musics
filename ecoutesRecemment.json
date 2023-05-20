@@ -1,0 +1,88 @@
+{
+    "artistes": [
+        {
+            "idArtiste": 7,
+            "name": "Mister V",
+            "album": [
+                {
+                    "idAlbum": 7,
+                    "nom": "MVP",
+                    "cover": "https://iassadki.github.io/musics/images/MV.png",
+                    "songs": [
+                        {
+                            "idMusique": 19,
+                            "title": "Lidl",
+                            "length": "3:10"
+                        },
+                        {
+                            "idMusique": 20,
+                            "title": "Vice City",
+                            "length": "3:51"
+                        },
+                        {
+                            "idMusique": 21,
+                            "title": "Gang",
+                            "length": "3:05"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "idArtiste": 8,
+            "name": "El Grande Toto",
+            "album": [
+                {
+                    "idAlbum": 8,
+                    "nom": "Cameleon",
+                    "cover": "https://iassadki.github.io/musics/images/EGT.png",
+                    "songs": [
+                        {
+                            "idMusique": 22,
+                            "title": "Santa Fe",
+                            "length": "3:15"
+                        },
+                        {
+                            "idMusique": 23,
+                            "title": "#Dirihakka",
+                            "length": "3:51"
+                        },
+                        {
+                            "idMusique": 24,
+                            "title": "Ailleurs",
+                            "length": "3:05"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "idArtiste": 9,
+            "name": "LIBERATO",
+            "album": [
+                {
+                    "idAlbum": 9,
+                    "nom": "Her Loss",
+                    "cover": "https://iassadki.github.io/musics/images/LIBERATO.png",
+                    "songs": [
+                        {
+                            "idMusique": 25,
+                            "title": "GRAZIA",
+                            "length": "3:15"
+                        },
+                        {
+                            "idMusique": 26,
+                            "title": "FUNICULI FUNICULA",
+                            "length": "3:51"
+                        },
+                        {
+                            "idMusique": 27,
+                            "title": "CCHIU FORT",
+                            "length": "3:05"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

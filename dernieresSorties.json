@@ -2,26 +2,26 @@
     "artistes": [
 
         {
-            "idArtiste": 5,
+            "idArtiste": 7,
             "name": "Werenoi",
             "album": [
                 {
-                    "idAlbum": 5,
+                    "idAlbum": 7,
                     "nom": "Carre",
                     "cover": "https://iassadki.github.io/musics/images/WERENOI.png",
                     "songs": [
                         {
-                            "idMusique": 13,
+                            "idMusique": 19,
                             "title": "Salaire",
                             "length": "3:10"
                         },
                         {
-                            "idMusique": 14,
+                            "idMusique": 20,
                             "title": "Vroum Vroum",
                             "length": "3:51"
                         },
                         {
-                            "idMusique": 15,
+                            "idMusique": 21,
                             "title": "Escorte",
                             "length": "3:05"
                         }
@@ -30,26 +30,26 @@
             ]
         },
         {
-            "idArtiste": 5,
-            "name": "HAMZA",
+            "idArtiste": 8,
+            "name": "Hamza",
             "album": [
                 {
-                    "idAlbum": 5,
+                    "idAlbum": 8,
                     "nom": "Sincerement",
                     "cover": "https://iassadki.github.io/musics/images/HAMZA.png",
                     "songs": [
                         {
-                            "idMusique": 16,
+                            "idMusique": 22,
                             "title": "Au Bout De La Nuit",
                             "length": "3:15"
                         },
                         {
-                            "idMusique": 17,
+                            "idMusique": 23,
                             "title": "Codeine 19",
                             "length": "3:51"
                         },
                         {
-                            "idMusique": 18,
+                            "idMusique": 24,
                             "title": "YSL",
                             "length": "3:05"
                         }
@@ -58,26 +58,26 @@
             ]
         },
                 {
-                    "idArtiste": 7,
-                    "name": "DRAKE",
+                    "idArtiste": 9,
+                    "name": "Drake",
                     "album": [
                         {
-                            "idAlbum": 7,
+                            "idAlbum": 9,
                             "nom": "Her Loss",
                             "cover": "https://iassadki.github.io/musics/images/DRAKE.png",
                             "songs": [
                                 {
-                                    "idMusique": 19,
+                                    "idMusique": 25,
                                     "title": "Rich Flex",
                                     "length": "3:15"
                                 },
                                 {
-                                    "idMusique": 20,
+                                    "idMusique": 26,
                                     "title": "On BS",
                                     "length": "3:51"
                                 },
                                 {
-                                    "idMusique": 21,
+                                    "idMusique": 27,
                                     "title": "Broke Boys",
                                     "length": "3:05"
                                 }
